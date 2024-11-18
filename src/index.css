@@ -1,0 +1,67 @@
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Components Styling */
+.navbar {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.home-section h1 {
+  font-size: 3rem;
+  animation: slideIn 1.5s ease-in-out;
+}
+
+.portfolio-section .card {
+  transition: transform 0.3s;
+}
+
+.portfolio-section .card:hover {
+  transform: scale(1.05);
+}
+
+.about-section {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.about-section .btn {
+  padding: 10px 20px;
+  font-size: 1.1rem;
+}
+
+.about-section .border {
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: transform 0.3s;
+}
+
+.about-section .border:hover {
+  transform: scale(1.1);
+  background-color: #f0f0f0;
+}
