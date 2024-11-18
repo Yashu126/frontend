@@ -9,7 +9,7 @@ const Portfolio = () => {
         <div className="row">
           {projects.map((project, index) => (
             <ProjectCard
-              key={index + project.id}
+              key={index}
               title={project.title}
               description={project.description}
               link={project.link}
